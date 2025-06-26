@@ -89,7 +89,8 @@ SpringBootSeleniumFramework/
    mvn clean test
    mvn clean test "-Dspring.profiles.active=qa"
    mvn clean test "-Dspring.profiles.active=prod"
-   mvn clean verify
+   mvn clean verify "-Dspring.profiles.active=qa"
+   mvn clean verify "-Dspring.profiles.active=prod"
    ```
 
 ## Configuration
