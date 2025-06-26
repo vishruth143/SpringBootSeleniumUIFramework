@@ -1,0 +1,8 @@
+2025-06-27T00:03:21.330+05:30  INFO 32788 --- [SpringBootSeleniumFramework] [main] c.e.S.steps.CucumberTestContextConfig    : Starting CucumberTestContextConfig using Java 21.0.6 with PID 32788 (C:\Eclipse\worskspace\SpringBootSeleniumFramework\target\test-classes started by VishvambruthJavagal in C:\Eclipse\worskspace\SpringBootSeleniumFramework)
+2025-06-27T00:03:21.336+05:30 DEBUG 32788 --- [SpringBootSeleniumFramework] [main] c.e.S.steps.CucumberTestContextConfig    : Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-06-27T00:03:21.337+05:30  INFO 32788 --- [SpringBootSeleniumFramework] [main] c.e.S.steps.CucumberTestContextConfig    : No active profile set, falling back to 1 default profile: "default"
+2025-06-27T00:03:28.570+05:30  INFO 32788 --- [SpringBootSeleniumFramework] [main] c.e.S.steps.CucumberTestContextConfig    : Started CucumberTestContextConfig in 7.572 seconds (process running for 8.833)
+2025-06-27T00:03:30.704+05:30  INFO 32788 --- [SpringBootSeleniumFramework] [main] c.e.S.steps.LoginSteps                   : I click login in Home page
+2025-06-27T00:03:31.686+05:30  INFO 32788 --- [SpringBootSeleniumFramework] [main] c.e.S.steps.LoginSteps                   : I enter the following for Login
+2025-06-27T00:03:32.127+05:30  INFO 32788 --- [SpringBootSeleniumFramework] [main] c.e.S.steps.LoginSteps                   : I click login button
+2025-06-27T00:03:33.099+05:30  INFO 32788 --- [SpringBootSeleniumFramework] [main] c.e.S.steps.LoginSteps                   : I should see the userform page
