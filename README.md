@@ -1,11 +1,11 @@
-# Spring Boot Selenium Framework
+# Spring Boot Selenium UI Framework
 
 This project is a test automation framework that combines Spring Boot with Selenium WebDriver, designed to provide a robust and scalable solution for web application testing.
 
 ## Project Structure
 
 ```
-SpringBootSeleniumFramework/
+SpringBootSeleniumUIFramework/
 ├──.github
 │   ├── workflows/
 │   │   ├──ci.yml  

@@ -11,8 +11,8 @@
 	<groupId>com.example</groupId>
 	<artifactId>SpringBootSeleniumUIFramework</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>SpringBootSeleniumFramework</name>
-	<description>Spring Boot Selenium Project</description>
+	<name>SpringBootSeleniumUIFramework</name>
+	<description>Spring Boot Selenium UI Project</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -47,6 +47,7 @@
 			<artifactId>spring-boot-starter-logging</artifactId>
 		</dependency>
 
+		<!-- Selenium -->
 		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
@@ -54,6 +55,7 @@
 			<version>4.33.0</version>
 		</dependency>
 
+		<!-- TestNG -->
 		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
 		<dependency>
 			<groupId>org.testng</groupId>
@@ -62,6 +64,7 @@
 			<scope>test</scope>
 		</dependency>
 
+		<!-- Cucumber -->
 		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-spring -->
 		<dependency>
 			<groupId>io.cucumber</groupId>
