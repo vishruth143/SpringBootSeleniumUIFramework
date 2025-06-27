@@ -6,6 +6,9 @@ This project is a test automation framework that combines Spring Boot with Selen
 
 ```
 SpringBootSeleniumFramework/
+├──.github
+│   ├── workflows/
+│   │   ├──ci.yml  
 ├── src/
 │   ├── main/
 │   │   ├── java/
@@ -21,6 +24,7 @@ SpringBootSeleniumFramework/
 │   │   │               │   └── ScreenshotUtil.java   
 │   │   │               └── SpringBootSeleniumFrameworkApplication.java
 │   │   └── resources/
+│   │       ├── application.properties
 │   │       ├── application-qa.properties
 │   │       └── application-prod.properties
 │   └── test/
