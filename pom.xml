@@ -119,7 +119,7 @@
 				<version>2.22.2</version>
 				<configuration>
 <!--					<includes>-->
-<!--						<include>com.ea.SpringBootSeleniumFramework.runner.TestRunner</include>-->
+<!--						<include>com.ea.SpringBootSeleniumUIFramework.runner.TestRunner</include>-->
 <!--					</includes>-->
 					<suiteXmlFiles>
 						<suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>

@@ -1,6 +1,6 @@
-package com.ea.SpringBootSeleniumFramework.steps;
+package com.ea.SpringBootSeleniumUIFramework.steps;
 
-import com.ea.SpringBootSeleniumFramework.utils.ScreenshotUtil;
+import com.ea.SpringBootSeleniumUIFramework.utils.ScreenshotUtil;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;

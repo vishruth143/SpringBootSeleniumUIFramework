@@ -1,7 +1,7 @@
-package com.ea.SpringBootSeleniumFramework.pages;
+package com.ea.SpringBootSeleniumUIFramework.pages;
 
-import com.ea.SpringBootSeleniumFramework.extensions.UIElementExtensions;
-import com.ea.SpringBootSeleniumFramework.extensions.WaitHelper;
+import com.ea.SpringBootSeleniumUIFramework.extensions.UIElementExtensions;
+import com.ea.SpringBootSeleniumUIFramework.extensions.WaitHelper;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.springframework.stereotype.Component;

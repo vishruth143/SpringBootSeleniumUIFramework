@@ -1,7 +1,7 @@
-package com.ea.SpringBootSeleniumFramework.steps;
+package com.ea.SpringBootSeleniumUIFramework.steps;
 
-import com.ea.SpringBootSeleniumFramework.pages.HomePage;
-import com.ea.SpringBootSeleniumFramework.pages.LoginPage;
+import com.ea.SpringBootSeleniumUIFramework.pages.HomePage;
+import com.ea.SpringBootSeleniumUIFramework.pages.LoginPage;
 import io.cucumber.java.en.*;
 import io.cucumber.datatable.DataTable;
 import org.springframework.beans.factory.annotation.Autowired;

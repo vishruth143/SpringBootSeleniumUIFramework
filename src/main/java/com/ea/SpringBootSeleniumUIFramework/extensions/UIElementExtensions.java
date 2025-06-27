@@ -1,4 +1,4 @@
-package com.ea.SpringBootSeleniumFramework.extensions;
+package com.ea.SpringBootSeleniumUIFramework.extensions;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.Select;

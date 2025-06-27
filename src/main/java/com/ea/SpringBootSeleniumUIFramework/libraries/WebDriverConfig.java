@@ -1,4 +1,4 @@
-package com.ea.SpringBootSeleniumFramework.libraries;
+package com.ea.SpringBootSeleniumUIFramework.libraries;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
