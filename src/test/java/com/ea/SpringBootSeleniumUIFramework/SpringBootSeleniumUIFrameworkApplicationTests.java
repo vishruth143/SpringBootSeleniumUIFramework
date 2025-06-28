@@ -12,7 +12,7 @@ import org.springframework.test.context.ActiveProfiles;
 
 @SpringBootTest
 @ActiveProfiles("prod")
-class SpringBootSeleniumFrameworkApplicationTests {
+class SpringBootSeleniumUIFrameworkApplicationTests {
 
 	@Autowired
 	private WebDriver driver;

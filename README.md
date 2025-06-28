@@ -14,7 +14,7 @@ SpringBootSeleniumUIFramework/
 │   │   ├── java/
 │   │   │   └── com/
 │   │   │       └── ea/
-│   │   │           └── SpringBootSeleniumFramework
+│   │   │           └── SpringBootSeleniumUIFramework
 │   │   │               └── extensions/
 │   │   │               │   └── UIElementExtensions.java
 │   │   │               │   └── WaitHelper.java 
@@ -31,7 +31,7 @@ SpringBootSeleniumUIFramework/
 │       └── java/
 │           └── com/
 │           │   └── ea/
-│           │        └── SpringBootSeleniumFramework/
+│           │        └── SpringBootSeleniumUIFramework/
 │           │            │└── features
 │           │            │├── Login.feature  
 │           │            └── pages/
@@ -46,8 +46,8 @@ SpringBootSeleniumUIFramework/
 │           │            │   ├── CucumberTestContextConfig.java 
 │           │            │   ├── Hooks.java 
 │           │            │   ├── LoginSteps.java
-│           │            └── SpringBootSeleniumFrameworkApplicationTestNGTests.java
-│           │            └── SpringBootSeleniumFrameworkApplicationTests.java
+│           │            └── SpringBootSeleniumUIFrameworkApplicationTestNGTests.java
+│           │            └── SpringBootSeleniumUIFrameworkApplicationTests.java
 │           └── resources/
 │               │──testng.xml
 ├── pom.xml

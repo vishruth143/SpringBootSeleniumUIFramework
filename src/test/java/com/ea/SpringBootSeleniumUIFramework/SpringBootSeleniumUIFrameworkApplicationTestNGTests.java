@@ -13,7 +13,7 @@ import org.springframework.test.context.ActiveProfiles;
 
 @SpringBootTest
 @ActiveProfiles("prod")
-public class SpringBootSeleniumFrameworkApplicationTestNGTests extends AbstractTestNGSpringContextTests {
+public class SpringBootSeleniumUIFrameworkApplicationTestNGTests extends AbstractTestNGSpringContextTests {
 
 	@Autowired
 	private WebDriver driver;
