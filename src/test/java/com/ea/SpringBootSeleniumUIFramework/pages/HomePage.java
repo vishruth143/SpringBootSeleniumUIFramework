@@ -4,9 +4,12 @@ import com.ea.SpringBootSeleniumUIFramework.extensions.UIElementExtensions;
 import com.ea.SpringBootSeleniumUIFramework.extensions.WaitHelper;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.springframework.beans.factory.config.ConfigurableBeanFactory;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
+@Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
 public class HomePage extends BasePage {
 
 //*******************************************************(Web Elements)*************************************************

@@ -10,6 +10,7 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Scope;
 
 @Configuration
 public class WebDriverConfig {
@@ -24,6 +25,7 @@ public class WebDriverConfig {
     private String url;
 
     @Bean
+//    @Scope("thread")
     public WebDriver webDriver() {
         WebDriver driver = null;
         switch (browser.toLowerCase()) {
@@ -56,8 +58,6 @@ public class WebDriverConfig {
         }
         System.out.println("Maximize the browser window");
         driver.manage().window().maximize();
-        System.out.println("Launch the application url: " + url);
-        driver.get(url);
         return driver;
     }
 }
