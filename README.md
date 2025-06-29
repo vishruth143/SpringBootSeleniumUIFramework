@@ -75,12 +75,12 @@ SpringBootSeleniumUIFramework/
 
 1. Clone the repository:
    ```
-   git clone https://github.com/vishruth143/SpringBootSeleniumFramework.git
+   git clone https://github.com/vishruth143/SpringBootSeleniumUIFramework.git
    ```
 
 2. Navigate to the project directory:
    ```
-   cd SpringBootSeleniumFramework
+   cd SpringBootSeleniumUIFramework
    ```
 
 3. Build the project:

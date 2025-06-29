@@ -8,10 +8,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.testng.Assert;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.ea.SpringBootSeleniumUIFramework.utils.ConfigParser;
 
 public class LoginSteps {
 
     private static final Logger logger = LoggerFactory.getLogger(LoginSteps.class);
+    JsonNode testData = ConfigParser.loadYaml("ui_test_data_config");
 
     @Autowired
     private HomePage homePage;
@@ -28,6 +31,8 @@ public class LoginSteps {
     @And("I enter the following for Login")
     public void iEnterTheFollowingForLogin(DataTable table) {
         logger.info("I enter the following for Login");
+        System.out.println("UserName: " + testData.get("Login with correct username and password").get("username").asText());
+        System.out.println("Password: " + testData.get("Login with correct username and password").get("password").asText());
         // Convert the data table into a list of lists
         var data = table.asLists(String.class);
 
