@@ -21,6 +21,7 @@ SpringBootSeleniumUIFramework/
 │   │   │               └── libraries/
 │   │   │               │   └── WebDriverConfig.java 
 │   │   │               └── utils/
+│   │   │               │   └── ConfigPParser.java 
 │   │   │               │   └── ScreenshotUtil.java   
 │   │   │               └── SpringBootSeleniumFrameworkApplication.java
 │   │   └── resources/
@@ -49,6 +50,8 @@ SpringBootSeleniumUIFramework/
 │           │            └── SpringBootSeleniumUIFrameworkApplicationTestNGTests.java
 │           │            └── SpringBootSeleniumUIFrameworkApplicationTests.java
 │           └── resources/
+│           │   └── config/
+│           │       ├── ui_test_data_config.yml
 │               │──testng.xml
 ├── pom.xml
 ├── mvnw
