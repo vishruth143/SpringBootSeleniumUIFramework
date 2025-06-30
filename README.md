@@ -1,6 +1,6 @@
 # Spring Boot Selenium UI Framework
 
-This project is a test automation framework that combines Spring Boot with Selenium WebDriver, designed to provide a robust and scalable solution for web application testing.
+This project is a test automation framework that combines Spring Boot with Selenium WebDriver and Cucumber, designed to provide a robust and scalable solution for web application testing.
 
 ## Project Structure
 
@@ -19,7 +19,7 @@ SpringBootSeleniumUIFramework/
 │   │   │               │   └── UIElementExtensions.java
 │   │   │               │   └── WaitHelper.java 
 │   │   │               └── libraries/
-│   │   │               │   └── WebDriverConfig.java 
+│   │   │               │   └── DriverManager.java 
 │   │   │               └── utils/
 │   │   │               │   └── ConfigPParser.java 
 │   │   │               │   └── ScreenshotUtil.java   
@@ -47,6 +47,8 @@ SpringBootSeleniumUIFramework/
 │           │            │   ├── CucumberTestContextConfig.java 
 │           │            │   ├── Hooks.java 
 │           │            │   ├── LoginSteps.java
+│           │            └── utils/
+│           │            │   ├── RetryFailedTestCases.java
 │           │            └── SpringBootSeleniumUIFrameworkApplicationTestNGTests.java
 │           │            └── SpringBootSeleniumUIFrameworkApplicationTests.java
 │           └── resources/

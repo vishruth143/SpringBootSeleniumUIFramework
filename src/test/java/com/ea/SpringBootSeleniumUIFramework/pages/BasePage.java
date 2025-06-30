@@ -1,13 +1,15 @@
 package com.ea.SpringBootSeleniumUIFramework.pages;
 
+import com.ea.SpringBootSeleniumUIFramework.libraries.DriverManager;
 import org.openqa.selenium.WebDriver;
-import org.springframework.beans.factory.annotation.Autowired;
 
-public class BasePage {
+public abstract class BasePage {
 
-    @Autowired
     protected WebDriver driver;
 
-    // Common methods for all pages can go here
+    // Constructor
+    public BasePage() {
+        this.driver = DriverManager.getDriver(); // dynamically get driver per scenario
+    }
 }
 
