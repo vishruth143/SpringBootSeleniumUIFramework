@@ -25,7 +25,7 @@ public class WebDriverConfig {
     private String url;
 
     @Bean
-//    @Scope("thread")
+//    @Scope("driverscope")
     public WebDriver webDriver() {
         WebDriver driver = null;
         switch (browser.toLowerCase()) {
