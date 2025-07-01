@@ -10,10 +10,10 @@ import org.slf4j.LoggerFactory;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.ea.SpringBootSeleniumUIFramework.utils.ConfigParser;
 
-public class LoginSteps {
+public class EA_App_Steps {
 
     //Logger
-    private static final Logger logger = LoggerFactory.getLogger(LoginSteps.class);
+    private static final Logger logger = LoggerFactory.getLogger(EA_App_Steps.class);
 
     //Test data
     JsonNode testData = ConfigParser.loadYaml("ui_test_data_config");
@@ -23,7 +23,7 @@ public class LoginSteps {
     private final LoginPage loginPage;
 
     // Constructor
-    public LoginSteps() {
+    public EA_App_Steps() {
         // Pages initialized with WebDriver from ThreadLocal
         homePage = new HomePage();
         loginPage = new LoginPage();
@@ -62,4 +62,9 @@ public class LoginSteps {
         Assert.assertTrue(homePage.isEmployeeDetailsExists());
     }
 
+    @Then("I should see the \"Invalid login attempt.\" text displayed")
+    public void iShouldSeeTheTextDisplayed() {
+        logger.info("I should see the \"Invalid login attempt.\" text displayed");
+        Assert.assertTrue(homePage.isInvalidLoginAttemptExists());
+    }
 }

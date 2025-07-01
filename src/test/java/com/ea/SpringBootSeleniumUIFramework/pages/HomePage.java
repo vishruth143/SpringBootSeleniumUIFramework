@@ -18,6 +18,9 @@ public class HomePage extends BasePage {
     private final By lnkEmployeeList = By.linkText("Employee List");
     private final By lnkEmployeeDetails = By.linkText("Employee Details");
 
+//-------------------------------------------------------Text-----------------------------------------------------------
+private final By textInvalidLoginAttempt = By.xpath("//li[normalize-space()='Invalid login attempt.']");
+
 //*******************************************************(Actions)******************************************************
 //-------------------------------------------------------Click----------------------------------------------------------
     public void clickLogin() {
@@ -30,6 +33,11 @@ public class HomePage extends BasePage {
 //-------------------------------------------------------Exists---------------------------------------------------------
     public boolean isEmployeeDetailsExists() {
         WebElement element = WaitHelper.waitForPresence(driver, lnkEmployeeDetails, 10);
+        return element.isDisplayed();
+    }
+
+    public boolean isInvalidLoginAttemptExists() {
+        WebElement element = WaitHelper.waitForPresence(driver, textInvalidLoginAttempt, 10);
         return element.isDisplayed();
     }
 
