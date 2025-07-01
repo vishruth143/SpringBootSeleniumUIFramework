@@ -29,13 +29,13 @@ public class LoginSteps {
         loginPage = new LoginPage();
     }
 
-    @Given("I click login in Home page")
+    @Given("I click \"login\" link in \"Home\" page")
     public void iClickLoginInHomePage() {
         logger.info("I click login in Home page");
         homePage.clickLogin();
     }
 
-    @And("I enter the following for Login")
+    @When("I enter the following for Login")
     public void iEnterTheFollowingForLogin(DataTable table) {
         logger.info("I enter the following for Login");
         System.out.println("UserName: " + testData.get("Login with correct username and password").get("username").asText());
@@ -50,15 +50,15 @@ public class LoginSteps {
         loginPage.Login(username, password);
     }
 
-    @And("I click login button")
+    @And("I click \"Log in\" button")
     public void iClickLoginButton() {
         logger.info("I click login button");
         loginPage.ClickLogin();
     }
 
-    @Then("I should see the userform page")
-    public void iShouldSeeTheUserformPage() {
-        logger.info("I should see the userform page");
+    @Then("I should see the \"Employee Details\" link")
+    public void iShouldSeeTheEmployeeDetailsLink() {
+        logger.info("I should see the \"Employee Details\" link");
         Assert.assertTrue(homePage.isEmployeeDetailsExists());
     }
 
