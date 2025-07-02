@@ -32,11 +32,11 @@ public class SpringBootSeleniumUIFrameworkApplicationTestNGTests extends Abstrac
 
 	@Test
 	void contextLoads() {
-		homePage.clickLogin();
+		homePage.clickLoginLink();
 		loginPage.Login("admin", "password");
-		loginPage.ClickLogin();
-		homePage.clickEmployeeList();
-		employeeListPage.clickCreateNew();
+		loginPage.clickLoginButton();
+		homePage.clickEmployeeListLink();
+		employeeListPage.clickCreateNewButton();
 		createEmployeePage.createNewEmployee("AutoUser2", "22222", "autotestuser2@gmail.com", "20000", "Middle");
 
 	}

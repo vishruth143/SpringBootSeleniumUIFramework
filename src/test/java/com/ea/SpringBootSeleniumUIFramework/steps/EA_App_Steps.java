@@ -1,5 +1,6 @@
 package com.ea.SpringBootSeleniumUIFramework.steps;
 
+import com.ea.SpringBootSeleniumUIFramework.pages.AboutPage;
 import com.ea.SpringBootSeleniumUIFramework.pages.HomePage;
 import com.ea.SpringBootSeleniumUIFramework.pages.LoginPage;
 import io.cucumber.java.en.*;
@@ -20,6 +21,7 @@ public class EA_App_Steps {
 
     // Pages
     private final HomePage homePage;
+    private final AboutPage aboutPage;
     private final LoginPage loginPage;
 
     // Constructor
@@ -27,12 +29,13 @@ public class EA_App_Steps {
         // Pages initialized with WebDriver from ThreadLocal
         homePage = new HomePage();
         loginPage = new LoginPage();
+        aboutPage = new AboutPage();
     }
 
     @Given("I click \"login\" link in \"Home\" page")
     public void iClickLoginInHomePage() {
         logger.info("I click login in Home page");
-        homePage.clickLogin();
+        homePage.clickLoginLink();
     }
 
     @When("I enter the following for Login")
@@ -53,18 +56,47 @@ public class EA_App_Steps {
     @And("I click \"Log in\" button")
     public void iClickLoginButton() {
         logger.info("I click login button");
-        loginPage.ClickLogin();
+        loginPage.clickLoginButton();
     }
 
     @Then("I should see the \"Employee Details\" link")
     public void iShouldSeeTheEmployeeDetailsLink() {
         logger.info("I should see the \"Employee Details\" link");
-        Assert.assertTrue(homePage.isEmployeeDetailsExists());
+        Assert.assertTrue(homePage.isEmployeeDetailsLinkExists());
     }
 
     @Then("I should see the \"Invalid login attempt.\" text displayed")
     public void iShouldSeeTheTextDisplayed() {
         logger.info("I should see the \"Invalid login attempt.\" text displayed");
-        Assert.assertTrue(homePage.isInvalidLoginAttemptExists());
+        Assert.assertTrue(homePage.isInvalidLoginAttemptTextExists());
+    }
+
+    @Then("I should see the \"Log off\" link")
+    public void iShouldSeeTheLogoffLink() {
+        logger.info("I should see the \"Log off\" link");
+        Assert.assertTrue(homePage.isLogoffLinkExists());
+    }
+
+    @And("I click \"Log off\" link")
+    public void iClickLogoffLink() {
+        logger.info("I click \"Log off\" link");
+        homePage.clickLogoffLink();
+    }
+
+    @Then("I should see the \"Login\" link")
+    public void iShouldSeeLoginLink() {
+        logger.info("I should see the \"Login\" link");
+        Assert.assertTrue(homePage.isLoginLinkExists());
+    }
+
+    @Given("I click \"About\" link on \"Home\" page")
+    public void iClickAboutLink() {
+        logger.info("I click \"About\" link on \"Home\" page");
+        homePage.clickAboutLink();
+    }
+
+    @Then("I should see the application version")
+    public void iShouldSeeTheApplicationVersion() {
+        Assert.assertTrue(aboutPage.isApplicationVersionTextExists());
     }
 }

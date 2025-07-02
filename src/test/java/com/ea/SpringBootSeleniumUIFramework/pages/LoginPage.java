@@ -27,7 +27,7 @@ public class LoginPage extends BasePage {
     }
 
 //-------------------------------------------------------Click----------------------------------------------------------
-    public void ClickLogin(){
+    public void clickLoginButton(){
         UIElementExtensions.performClick(driver, btnLogin);
     }
 

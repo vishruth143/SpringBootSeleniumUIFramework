@@ -16,7 +16,7 @@ public class EmployeeListPage extends BasePage {
 
 //*******************************************************(Actions)******************************************************
 //-------------------------------------------------------Click----------------------------------------------------------
-    public void clickCreateNew() {
+    public void clickCreateNewButton() {
         UIElementExtensions.performClick(driver, btnCreateNew);
     }
 

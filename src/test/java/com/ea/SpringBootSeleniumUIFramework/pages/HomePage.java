@@ -15,6 +15,8 @@ public class HomePage extends BasePage {
 //*******************************************************(Web Elements)*************************************************
 //-------------------------------------------------------Link-----------------------------------------------------------
     private final By lnkLogin = By.linkText("Login");
+    private final By lnkAbout = By.linkText("About");
+    private final By lnkLogoff = By.linkText("Log off");
     private final By lnkEmployeeList = By.linkText("Employee List");
     private final By lnkEmployeeDetails = By.linkText("Employee Details");
 
@@ -23,21 +25,39 @@ private final By textInvalidLoginAttempt = By.xpath("//li[normalize-space()='Inv
 
 //*******************************************************(Actions)******************************************************
 //-------------------------------------------------------Click----------------------------------------------------------
-    public void clickLogin() {
+    public void clickLoginLink() {
         UIElementExtensions.performClick(driver, lnkLogin);
     }
 
-    public void clickEmployeeList(){
+    public void clickAboutLink() {
+        UIElementExtensions.performClick(driver, lnkAbout);
+    }
+
+    public void clickLogoffLink() {
+        UIElementExtensions.performClick(driver, lnkLogoff);
+    }
+
+    public void clickEmployeeListLink(){
         UIElementExtensions.performClick(driver, lnkEmployeeList);
     }
 //-------------------------------------------------------Exists---------------------------------------------------------
-    public boolean isEmployeeDetailsExists() {
+    public boolean isEmployeeDetailsLinkExists() {
         WebElement element = WaitHelper.waitForPresence(driver, lnkEmployeeDetails, 10);
         return element.isDisplayed();
     }
 
-    public boolean isInvalidLoginAttemptExists() {
+    public boolean isInvalidLoginAttemptTextExists() {
         WebElement element = WaitHelper.waitForPresence(driver, textInvalidLoginAttempt, 10);
+        return element.isDisplayed();
+    }
+
+    public boolean isLoginLinkExists() {
+        WebElement element = WaitHelper.waitForPresence(driver, lnkLogin, 10);
+        return element.isDisplayed();
+    }
+
+    public boolean isLogoffLinkExists() {
+        WebElement element = WaitHelper.waitForPresence(driver, lnkLogoff, 10);
         return element.isDisplayed();
     }
 
